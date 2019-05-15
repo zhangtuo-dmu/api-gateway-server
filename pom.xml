@@ -22,19 +22,6 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <distributionManagement>
-        <repository>
-            <id>netease_release</id>
-            <name>netease_release</name>
-            <url>http://mvn.hz.netease.com/artifactory/libs-releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>netease_snapshots</id>
-            <name>netease_snapshots</name>
-            <url>http://mvn.hz.netease.com/artifactory/libs-snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <properties>
         <super-player.version>1.0.0-SNAPSHOT</super-player.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -95,12 +82,7 @@
                 <artifactId>pagehelper</artifactId>
                 <version>${pagehelper.version}</version>
             </dependency>
-            <!-- 哨兵 -->
-            <dependency>
-                <groupId>com.netease.sentry</groupId>
-                <artifactId>sentry-javaagent-collector</artifactId>
-                <version>${sentry.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-integration</artifactId>
@@ -285,26 +267,6 @@
             </snapshots>
         </repository>
         <repository>
-            <id>netease-release</id>
-            <url>http://mvn.hz.netease.com/artifactory/libs-releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>netease-snapshot</id>
-            <url>http://mvn.hz.netease.com/artifactory/libs-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
             <id>central</id>
             <url>http://repo1.maven.org/maven2</url>
             <releases>
@@ -325,26 +287,6 @@
             </releases>
             <snapshots>
                 <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>netease-releases</id>
-            <url>http://mvn.hz.netease.com/artifactory/libs-releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>netease-snapshots</id>
-            <url>http://mvn.hz.netease.com/artifactory/libs-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
         <pluginRepository>
