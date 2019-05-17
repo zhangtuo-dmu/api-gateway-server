@@ -30,18 +30,19 @@ public class ApiInfo implements Serializable {
     private String version;
     //前端接口地址
     private String frontUrl;
-    // 后端地址
+    // 后端地址 dubbo路由地址为：com.dubbo.test.DemoService@sayHello@{dubbo-api-version}
+    // 后端地址 http路由地址为：post@/api/v1/test
     private String backendUrl;
     // 后端超时
     private long backendTimeout;
     // http 1 dubbo 2
-    private int protocal;
+    private String protocol;
     // 是否开启auth
     private boolean isAuth;
 
     private Timestamp createTime;
 
-    private Timestamp upateTime;
+    private Timestamp updateTime;
 
 }
 

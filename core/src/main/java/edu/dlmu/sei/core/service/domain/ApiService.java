@@ -1,4 +1,4 @@
-package edu.dlmu.sei.core.service.api;
+package edu.dlmu.sei.core.service.domain;
 
 import edu.dlmu.sei.repository.meta.ApiInfo;
 

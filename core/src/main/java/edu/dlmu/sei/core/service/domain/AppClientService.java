@@ -1,4 +1,4 @@
-package edu.dlmu.sei.core.service.appclient;
+package edu.dlmu.sei.core.service.domain;
 
 import edu.dlmu.sei.repository.meta.AppClient;
 

@@ -1,13 +1,11 @@
 package edu.dlmu.sei.core.filter.pre;
 
-import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.exception.ZuulException;
 import com.netflix.zuul.util.HTTPRequestUtils;
 import edu.dlmu.sei.common.exception.BusinessException;
 import edu.dlmu.sei.core.filter.BaseFilter;
-import edu.dlmu.sei.core.service.api.ApiService;
-import edu.dlmu.sei.core.service.appclient.AppClientService;
+import edu.dlmu.sei.core.service.domain.ApiService;
+import edu.dlmu.sei.core.service.domain.AppClientService;
 import edu.dlmu.sei.repository.meta.ApiInfo;
 import edu.dlmu.sei.repository.meta.AppClient;
 import edu.dlmu.sei.repository.meta.CallStatistics;
@@ -41,7 +39,7 @@ public class PreInitFilter extends BaseFilter {
 
     @Override
     public int filterOrder() {
-        return 0;
+        return 90;
     }
 
     @Override

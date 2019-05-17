@@ -8,7 +8,7 @@ import edu.dlmu.sei.core.filter.BaseFilter;
  */
 public class AclFilter extends BaseFilter {
     @Override
-    protected Object execute() throws ZuulException {
+    protected Object execute() {
         return null;
     }
 
